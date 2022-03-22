@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>greenTea</title>
+    <link rel="stylesheet" href="./src/assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="./src/assets/fonts/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./src/assets/fonts/ionicons.min.css"/>
+    <link rel="stylesheet" href="./src/assets/css/Features-Boxed.css"/>
+    <link rel="stylesheet" href="./src/assets/css/Footer-Dark.css"/>
+    <link rel="stylesheet" href="./src/assets/css/Header-Blue.css"/>
+    <link rel="stylesheet" href="./src/assets/css/Highlight-Blue.css"/>
+    <link rel="stylesheet" href="./src/assets/css/Animated-Type-Heading.css"/>
+    <link rel="stylesheet" href="./src/assets/css/Navigation-with-Search.css"/>
+    <link rel="stylesheet" href="./src/assets/css/Projects-Horizontal.css"/>
+    <link rel="stylesheet" href="./src/assets/css/styles.css"/>
+    <link rel="stylesheet" href="./src/assets/css/Faq-by-pomdre.css"/>
+    <link rel="stylesheet" href="./src/assets/fonts/simple-line-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dekko&amp;display=swap"/>
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css"/>
+    <link rel="stylesheet" href="./src/assets/css/site.css" />
+    <link rel="stylesheet" href="./src/assets/lib/jquery/dist/jquery.min.js" />
+    <script src="./src/assets/lib/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body className="p-0 m-0 bg-light" style="font-family: Dekko, serif;">
+    
+    <div id="root"></div>
+    
+    <script type="module" src="/src/main.jsx"></script>
+
+
+    
+    <script src="./src/assets/lib/jquery/dist/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./src/assets/lib/jquery/dist/jquery.filterizr.min.js"></script>
+    <script src="./src/assets/js/Faq-by-pomdre.js"></script>
+
+    <!--FilterizR-->
+    <script>
+        const filterizr = $('.filter-container').filterizr({
+            controlsSelector: '.filtr-controls',
+            gridItemsSelector: '.filtr-item',
+            spiner: {
+                enabled: true
+            }
+        })
+        $("#shuffle").click(() => {
+            filterizr.filterizr('shuffle')
+        })
+        const sortFilterizr = (order) => {
+            filterizr.filterizr('sort', $("select: selected").val(), order)
+        }
+        $("#asc-btn").click(() => {
+            sortFilterizr('asc')
+        })
+        $("#des-btn").click(() => {
+            sortFilterizr('des')
+        })
+
+    </script>
+    <!--FilterizR-->
+
+    <script>
+        let cont = 0;
+        const player = (track) => {
+            const audio = document.querySelector(track);
+            const pauseGeral = document.querySelectorAll("audio");
+            for (var i = 0; i < pauseGeral.length; i++) {
+                pauseGeral[i].pause();
+            }
+                audio.play();       
+        };
+    </script>
+    <script src="./src/assets/js/Animated-Type-Heading.js"></script>
+    <script src="./src/assets/js/bs-init.js"></script>
+    <script src="./src/assets/js/vanilla-zoom.js"></script>
+    <script src="./src/assets/js/theme.js"></script>
+    <script src="./src/assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/site.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+
+</body>
+</html>
