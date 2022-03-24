@@ -4,9 +4,9 @@ import Header from './Components/Header'
 import Footer from './Components/Footer'
 
 ReactDOM.render(
-  <React.StrictMode>
-          <Header/>
-      <Footer/>
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<Header />
+		<Footer />
+	</React.StrictMode>,
+	document.getElementById('root')
 )
