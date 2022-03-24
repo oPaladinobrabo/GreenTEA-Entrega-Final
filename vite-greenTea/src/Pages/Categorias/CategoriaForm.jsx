@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Api from "../../Services/Api";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 const CategoriaForm = () => {
   const navigate = useNavigate();
@@ -37,12 +39,33 @@ const CategoriaForm = () => {
 
   return (
     <div className="container">
-      <h1>Cria nova categoria</h1>
+      <br />
+      <br />
+      <br />
+      <h1>{id? "Editando" : "Criar nova "} categoria</h1>
+      {id &&
+        
+        <dl className="row">
+            <dt className="col-sm-2">
+                Categoria
+            </dt>
+            <dd className="col-sm-10 font-weight-bold">
+                {obj.nome}
+            </dd>
+            <dt className="col-sm-2">
+                Cor
+            </dt>
+            <dd className="col-sm-10 btn text-white" style={{background: obj.cor, maxWidth: 100}}>
+                {obj.cor}
+            </dd>
+        </dl>
+
+      }
 
       <hr />
       <div className="d-flex p-2 justify-content-center mt-5 mb-5 pb-5">
         <div className="col-md-4">
-          <form>
+          <form onSubmit={onSubmit}>
             <div className="form-group">
               <label htmlFor="nome" className="control-label">
                 Nome Categoria

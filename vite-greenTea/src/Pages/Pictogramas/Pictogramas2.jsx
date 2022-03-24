@@ -24,7 +24,7 @@ const Pictogramas = () => {
     if(filtro){
         const exp = eval(`/${filtro.replace(/[^\d\w]+/,'.*')}/i`)
         cardsState = cards.filter( item => exp.test( item.nome )     
-    )
+        )
     }
     const filtrarNome = e =>{
         setFiltro( e.target.value)
@@ -58,10 +58,10 @@ const Pictogramas = () => {
                     </div>
                 </div>
 
-                <div className="cards row filter-container ml-sm-2 ml-md-3 ml-4 ">
+                <div className="cards d-flex row filter-container ml-sm-2 ml-md-3 ml-4 ">
                     <h4>{load}</h4>
                     {cardsState.map(card => (
-                        <div key={card.id} className="card filtr-item col-6 col-sm-4 col-md-3 col-lg-2 card-edit "
+                        <div key={card.id} className="card filtr-item col-6 col-sm-4 col-md-2 col-lg-3 card-edit "
                                 style={{background: card.categoria.cor, border: '#fff solid 2'}}
                                 data-category={card.categoria.nome} data-sort="value">
 

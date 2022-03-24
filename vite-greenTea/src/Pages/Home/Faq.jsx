@@ -1,11 +1,11 @@
 import React from 'react'
-import '../../assets/css/Faq-by-pomdre.css'
 import { useEffect } from 'react'
+import './Faq.css'
 
 const Faq = () => {
 	useEffect(() => {
 		const script = document.createElement('script')
-		script.src = '../src/assets/js/Faq-by-pomdre.js'
+		script.src = 'assets/js/Faq-by-pomdre.js'
 		script.async = true
 		document.body.appendChild(script)
 		return () => {
@@ -17,7 +17,7 @@ const Faq = () => {
 			<div className="position-relative">
 				<img
 					style={{ filter: 'opacity(50%)' }}
-					src="./src/assets/media/puzzles.jpeg"
+					src="assets/media/puzzles.jpeg"
 				/>
 			</div>
 			<main className="page landing-page ">

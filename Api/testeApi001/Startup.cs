@@ -35,7 +35,7 @@ namespace testeApi001
             {
                 options.AddPolicy(name: _LocalHost, builder =>
                 {
-                    builder.WithOrigins("https://green-tea-entrega-final-deploy.vercel.app/")
+                    builder.WithOrigins("http://localhost:3000/")
                     .AllowAnyHeader()
                     .AllowAnyMethod();
                 });

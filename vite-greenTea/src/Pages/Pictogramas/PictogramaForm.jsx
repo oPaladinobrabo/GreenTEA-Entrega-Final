@@ -124,12 +124,11 @@ const PictogramaForm = () => {
 
             <div className="form-group">
               {id &&
-                <button onClick={() => deleteDestino(destino.id)} className="btn btn-danger ml-4">
+                <Link to={`/pictograma/delete/${id}`} className="btn btn-danger ml-4">
                   Delete
-                </button>
-              }
-              
-              <Link to={"/pictogramas"} className="btn btn-primary ml-4 mr-4">
+                </Link>
+              }             
+              <Link to={"/pictogramas2"} className="btn btn-primary ml-4 mr-4">
                 Voltar
               </Link>
               <button type="submit" className="btn btn-style btn-success mr-4">

@@ -268,3 +268,13 @@ C:\Users\202008459001\Downloads\Front-BackApi-greentea\testeApi001\testeApi001\o
 C:\Users\202008459001\Downloads\Front-BackApi-greentea\testeApi001\testeApi001\obj\Debug\net5.0\ref\testeApi001.dll
 C:\Users\202008459001\Downloads\Front-BackApi-greentea\testeApi001\testeApi001\obj\Debug\net5.0\testeApi001.pdb
 C:\Users\202008459001\Downloads\Front-BackApi-greentea\testeApi001\testeApi001\obj\Debug\net5.0\testeApi001.genruntimeconfig.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\GreenTEA-Entrega-Final\Api\testeApi001\obj\Debug\net5.0\testeApi001.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\GreenTEA-Entrega-Final\Api\testeApi001\obj\Debug\net5.0\testeApi001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\OneDrive\Área de Trabalho\GreenTEA-Entrega-Final\Api\testeApi001\obj\Debug\net5.0\testeApi001.AssemblyInfoInputs.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\GreenTEA-Entrega-Final\Api\testeApi001\obj\Debug\net5.0\testeApi001.AssemblyInfo.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\GreenTEA-Entrega-Final\Api\testeApi001\obj\Debug\net5.0\testeApi001.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\GreenTEA-Entrega-Final\Api\testeApi001\obj\Debug\net5.0\testeApi001.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\GreenTEA-Entrega-Final\Api\testeApi001\obj\Debug\net5.0\testeApi001.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\GreenTEA-Entrega-Final\Api\testeApi001\obj\Debug\net5.0\testeApi001.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\GreenTEA-Entrega-Final\Api\testeApi001\obj\Debug\net5.0\ref\testeApi001.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\GreenTEA-Entrega-Final\Api\testeApi001\obj\Debug\net5.0\testeApi001.pdb

@@ -1,10 +1,11 @@
 ﻿import React from 'react'
 import { useEffect } from 'react'
+import './Animated-Type-Heading.css'
 
 const Sobre = () => {
 	useEffect(() => {
 		const script = document.createElement('script')
-		script.src = '../src/assets/js/Animated-Type-Heading.js'
+		script.src = 'assets/js/Animated-Type-Heading.js'
 		script.async = true
 		document.body.appendChild(script)
 		return () => {

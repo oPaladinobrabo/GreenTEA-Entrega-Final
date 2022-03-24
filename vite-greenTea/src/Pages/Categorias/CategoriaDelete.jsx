@@ -26,39 +26,55 @@ const CategoriaDelete = () => {
 
   return (
     <div className="container mb-5">
-      <br /><br /><br />
-
+      <br />
+      <br />
+      <br />
       <div className="alert alert-danger">
-        <h4 className="alert-heading">Atenção!</h4>
-        <h3>Você realmente quer excluir este item?</h3>
+        <h4 className="alert-heading">Atenção! Você realmente quer excluir este item?</h4>
+        <h3></h3>
         <hr />
+        <h3>TODOS os itens relacionados à ele, serão EXCLUÍDOS!!!</h3>
         <p className="mb-0">
-          Lembrando que sempre que precisar, você também pode editar a Categoria.
+          Lembrando que sempre que precisar, você também pode editar a
+          Categoria.
         </p>
       </div>
       <hr />
+      <hr />
       <div className="row">
-        <div className="col-sm-6 col-md-4 col-lg-3 mb-3">
-          <div
-            className="card border-0"
-            style={{ minHeight: 350, background: "#f8f8f8" }}
-          >
-            <div className=" card_index_receita">
-              <h5 className="p-1" style={{ minHeight: 50 }}>
-                {obj.nome}
-              </h5>
-              
+        <div className="col-6">
+          <div className="col-sm-8 font-weight-bold">
+            Categoria
+          </div>
+          <div className="col-sm-8 btn font-weight-bold text-white"style={{ background: obj.cor}}>
+            {obj.nome}
+          </div>
+          <div className="col-sm-8 font-weight-bold ">
+            Cor
+          </div>
+          <div className="col-sm-8 btn font-weight-bold text-white"style={{ background: obj.cor}}>  
+            {obj.cor}
+          </div>
+          <hr />
+          <div className="d-flex ">
+            <div className="col-4">
+              <button
+                onClick={() => deletar(id)}
+                className="btn btn-danger ml-1 mr-3"
+              >
+                Confirmar
+              </button>
             </div>
+            <div className="col-4">
+              <Link to={redirect} className="btn btn-primary ml-4 mr-4">
+              Voltar
+            </Link>
+            </div>
+            
+            
           </div>
         </div>
-      </div>
-      <div>
-        <button onClick={() => deletar(id)} className="btn btn-danger ml-4">
-          Confirmar
-        </button>
-        <Link to={redirect} className="btn btn-primary ml-4 mr-4">
-          Voltar
-        </Link>
+        
       </div>
     </div>
   );

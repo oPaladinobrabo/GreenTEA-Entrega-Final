@@ -11,22 +11,29 @@ import Contatos from "../Pages/Home/Contatos";
 import Pictogramas from "../Pages/Pictogramas/Pictogramas";
 import Pictogramas2 from "../Pages/Pictogramas/Pictogramas2";
 import PictogramaForm from "../Pages/Pictogramas/PictogramaForm";
+import PictogramaDelete from "../Pages/Pictogramas/PictogramaDelete";
 import Receitas from "../Pages/Receitas/Receitas";
 import Receita from "../Pages/Receitas/Receita";
 import ReceitaForm from "../Pages/Receitas/ReceitaForm";
 import ReceitaDelete from "../Pages/Receitas/ReceitaDelete";
-import './greenTea2.png'
-//import Categorias from "../Pages/Categorias/Categorias";
+import Categorias from "../Pages/Categorias/Categorias";
+import CategoriaForm from "../Pages/Categorias/CategoriaForm";
+import CategoriaDelete from "../Pages/Categorias/CategoriaDelete";
+import './Navi.css'
+import './gradient.css'
+
+
+import Logo from "../../assets/media/greenTea2.png"
 
 import {
-	BrowserRouter as Router,
-	Route,
-	Routes,
-	NavLink
-} from 'react-router-dom'
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  NavLink,
+} from "react-router-dom";
 
 const Header = () => {
-	return (
+  return (
 		<Router>
 			<div
 				className="container p-0 d-inline-flex justify-content-center row flex-nowrap bg-white"
@@ -34,18 +41,10 @@ const Header = () => {
 			>
 				<div className="container mr-5 col-8 col-sm-10 d-flex justify-content-center pl-5">
 					<a className="navbar-brand">
-						<img
-							src="https://i.ibb.co/ZxCZ4y2/green-Tea2.png"
-							style={{ width: 255 }}
-							className="img-fluid"
-						/>
+						<img src={Logo} style={{ width: 255 }} className="img-fluid" />
 					</a>
 				</div>
-				<div className="ml-4 col-2 col-sm-1">
-					<button className="btn linearGradiente nav-link shadow-lg rounded-pill text-white">
-						Login
-					</button>
-				</div>
+				<div className="ml-4 col-2 col-sm-1"></div>
 			</div>
 			<header className="sticky-top" style={{ fontFamily: 'serif' }}>
 				<nav
@@ -173,7 +172,7 @@ const Header = () => {
 				</nav>
 			</header>
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="/" exact="true" element={<Home />} />
 				<Route path="/whitenoises" element={<WhiteNoise />} />
 				<Route path="/sobre" element={<Sobre />} />
 				<Route path="/faq" element={<Faq />} />
@@ -185,21 +184,21 @@ const Header = () => {
 				<Route path="/pictogramas" element={<Pictogramas />} />
 				<Route path="/pictogramas2" element={<Pictogramas2 />} />
 				<Route path="/pictograma/editar/:id" element={<PictogramaForm />} />
+				<Route path="/pictograma/delete/:id" element={<PictogramaDelete />} />
 				<Route path="/pictograma/novo" element={<PictogramaForm />} />
 				<Route path="/receitas" element={<Receitas />} />
 				<Route path="/receita/:id" element={<Receita />} />
 				<Route path="/receita/editar/:id" element={<ReceitaForm />} />
 				<Route path="/receita/novo" element={<ReceitaForm />} />
 				<Route path="/receita/delete/:id" element={<ReceitaDelete />} />
-				<Route path="/teste" element={<testew />} />
-				{
-					//<Route path="/categorias" element={<Categorias />} />
-					//<Route path="/categoria/editar/:id" element={<CategoriaForm />} />
-					//<Route path="/categoria/novo" element={<CategoriaForm />} />
-				}
+				<Route path="/categorias" element={<Categorias />} />
+				<Route path="/categoria/editar/:id" element={<CategoriaForm />} />
+				<Route path="/categoria/novo" element={<CategoriaForm />} />
+				<Route path="/categoria/delete/:id" element={<CategoriaDelete />} />
+				{}
 			</Routes>
 		</Router>
 	)
-}
+};
 
 export default Header;

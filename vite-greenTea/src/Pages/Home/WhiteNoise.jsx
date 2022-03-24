@@ -1,7 +1,6 @@
 ﻿import React from 'react'
 import Audio from 'react-audio-player'
 
-
 const WhiteNoise = () => {
 	return (
 		<div>
@@ -35,7 +34,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Chuva.mp3"
+											src="assets/whiteNoises/Chuva.mp3"
 											controls
 											loop
 										/>
@@ -46,7 +45,7 @@ const WhiteNoise = () => {
 									<div style={{ width: '170', position: 'relative' }}>
 										<label htmlFor="w4">
 											<input
-												type="radio"
+												type="button"
 												name="w-noise"
 												id="w4"
 												className=" text-center"
@@ -56,7 +55,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Cascata.mp3"
+											src="assets/whiteNoises/Cascata.mp3"
 											controls
 											loop
 										/>
@@ -67,7 +66,7 @@ const WhiteNoise = () => {
 									<div style={{ width: '170', position: 'relative' }}>
 										<label htmlFor="w5">
 											<input
-												type="radio"
+												type="button"
 												name="w-noise"
 												id="w5"
 												className=" text-center"
@@ -77,7 +76,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Mar.mp3"
+											src="assets/whiteNoises/Mar.mp3"
 											controls
 											loop
 										/>
@@ -88,7 +87,7 @@ const WhiteNoise = () => {
 									<div style={{ width: '170', position: 'relative' }}>
 										<label htmlFor="w6">
 											<input
-												type="radio"
+												type="button"
 												name="w-noise"
 												id="w6"
 												className=" text-center"
@@ -98,7 +97,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Chuveiro.mp3"
+											src="assets/whiteNoises/Chuveiro.mp3"
 											controls
 											loop
 										/>
@@ -108,7 +107,7 @@ const WhiteNoise = () => {
 									<div style={{ width: '170', position: 'relative' }}>
 										<label htmlFor="w9">
 											<input
-												type="radio"
+												type="button"
 												name="w-noise"
 												id="w9"
 												className=" text-center"
@@ -118,7 +117,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Ulterino.mp3"
+											src="assets/whiteNoises/Ulterino.mp3"
 											controls
 											loop
 										/>
@@ -129,7 +128,7 @@ const WhiteNoise = () => {
 									<div style={{ width: '170', position: 'relative' }}>
 										<label htmlFor="w11">
 											<input
-												type="radio"
+												type="button"
 												name="w-noise"
 												id="w11"
 												className=" text-center"
@@ -139,7 +138,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Carro.mp3"
+											src="assets/whiteNoises/Carro.mp3"
 											controls
 											loop
 										/>
@@ -149,7 +148,7 @@ const WhiteNoise = () => {
 									<div style={{ width: '170', position: 'relative' }}>
 										<label htmlFor="w44">
 											<input
-												type="radio"
+												type="button"
 												name="w-noise"
 												id="w44"
 												className=" text-center"
@@ -159,7 +158,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Aquecedor.mp3"
+											src="assets/whiteNoises/Aquecedor.mp3"
 											controls
 											loop
 										/>
@@ -170,7 +169,7 @@ const WhiteNoise = () => {
 									<div style={{ width: '170', position: 'relative' }}>
 										<label htmlFor="w55">
 											<input
-												type="radio"
+												type="button"
 												name="w-noise"
 												id="w55"
 												className=" text-center"
@@ -180,7 +179,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Aspirador.mp3"
+											src="assets/whiteNoises/Aspirador.mp3"
 											controls
 											loop
 										/>
@@ -191,7 +190,7 @@ const WhiteNoise = () => {
 									<div style={{ width: '170', position: 'relative' }}>
 										<label htmlFor="w66">
 											<input
-												type="radio"
+												type="button"
 												name="w-noise"
 												id="w66"
 												className=" text-center"
@@ -201,7 +200,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Secador.mp3"
+											src="assets/whiteNoises/Secador.mp3"
 											controls
 											loop
 										/>
@@ -212,7 +211,7 @@ const WhiteNoise = () => {
 									<div style={{ width: '170', position: 'relative' }}>
 										<label htmlFor="w77">
 											<input
-												type="radio"
+												type="button"
 												name="w-noise"
 												id="w77"
 												className=" text-center"
@@ -222,7 +221,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Ventilador.mp3"
+											src="assets/whiteNoises/Ventilador.mp3"
 											controls
 											loop
 										/>
@@ -233,7 +232,7 @@ const WhiteNoise = () => {
 									<div style={{ width: '170', position: 'relative' }}>
 										<label htmlFor="w88">
 											<input
-												type="radio"
+												type="button"
 												name="w-noise"
 												id="w88"
 												className=" text-center sd"
@@ -243,7 +242,7 @@ const WhiteNoise = () => {
 										</label>
 										<Audio
 											style={{ maxWidth: 170, marginLeft: '14px' }}
-											src="./src/assets/whiteNoises/Nebulizador.mp3"
+											src="assets/whiteNoises/Nebulizador.mp3"
 											controls
 											loop
 										/>

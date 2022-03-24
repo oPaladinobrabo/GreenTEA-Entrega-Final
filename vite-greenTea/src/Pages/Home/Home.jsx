@@ -1,9 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import './Features.css'
+import './Highlight.css'
+import './Project.css'
+
+
 
 
 const Home = () => {
-  return (
+	return (
 		<div>
 			<section className="projects-horizontal">
 				<div className="container">
@@ -180,3 +185,5 @@ const Home = () => {
 }
 
 export default Home
+
+
